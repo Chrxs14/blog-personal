@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { getAllFilesMetadata } from "../lib/mdx";
 import Header from "../components/Header";
 
-export default function Home({ posts }) {
+export default function Home2({ posts }) {
   return (
     <div className={styles.container}>
       <Header />
@@ -25,12 +25,4 @@ export default function Home({ posts }) {
       <footer className={styles.footer}></footer>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const posts = await getAllFilesMetadata();
-  console.log(posts);
-  return {
-    props: { posts },
-  };
 }

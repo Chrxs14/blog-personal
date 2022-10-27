@@ -1,12 +1,15 @@
 import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "../lib/mdx";
 import Link from "next/link";
+import Header from "../components/Header";
+
 // import MDXComponents from "../components/MDXComponents";
 
 export default function Post({ source, frontmatter }) {
   console.log(source);
   return (
     <div>
+      <Header />
       <Link href="/">regresar</Link>
       <MDXRemote {...source} />
     </div>
