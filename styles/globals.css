@@ -15,6 +15,30 @@ a {
 * {
   box-sizing: border-box;
 }
+.mainContent {
+  margin: 5vh 0;
+}
+.postContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+  margin: 10px 0;
+  justify-content: center;
+}
+.imgPost {
+  width: 100%;
+  max-width: 450px;
+  height: 100px;
+  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.buttonBack {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
+}
 
 @media (prefers-color-scheme: dark) {
   html {
